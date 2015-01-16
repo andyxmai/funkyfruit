@@ -1,0 +1,138 @@
+.thing-form {
+    margin: 20px 0;
+}
+
+#banner {
+    border-bottom: none;
+    margin-top: -20px;
+}
+
+#banner h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.hero-unit {
+    position: relative;
+    padding: 30px 15px;
+    color: #F5F5F5;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    background: #4393B9;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.page-header {
+    border: none;
+    text-align: center;
+}
+
+.hero {
+    @include mobile {
+        background-image: url('/assets/images/hero_sm.png');
+        height: 1250px;
+        text-align: center;
+    }
+
+    @include tablet {
+        background-image: url('/assets/images/hero.png');
+    }
+
+    @include desktop {
+        background-image: url('/assets/images/hero.png');
+        height: 813px;
+        
+        .logo {
+            margin-bottom: 130px;
+        }
+    }
+    background-color: $funky-green;
+    background-repeat: no-repeat;
+    color: white;
+
+    h3 {
+        margin-bottom: 5px;
+    }
+
+    .tagline {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .form {
+        background-color: $funky-green;
+        padding: 20px;
+        // margin: 10px;
+    }
+    .info {
+        margin-top: 20px;
+    }
+    .left {
+        // margin-left: 10px;
+    }
+}
+
+.whats-in-produce-box {
+    li {
+        margin-bottom: 30px;
+    }
+    .icon {
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+    }
+    .seasonal {
+        background-image: url('/assets/images/snowflake.png');
+    }
+    .offspec {
+        background-image: url('/assets/images/noshopping.png');
+    }
+    .deliciousness {
+        background-image: url('/assets/images/dinner.png');
+    }
+}
+
+.what-farmers-are-saying {
+    background-color: $funky-green;
+    color: white;
+    .quote {
+        font-size: 27px;
+        margin: 17px;
+    }
+    .farmer {
+        text-align: right;
+        font-size: 18px;
+    }
+}
+
+.why-purchase-offspec-produce {
+    li {
+        margin-bottom: 30px;
+    }
+    .icon {
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+    }
+    .quality {
+        background-image: url('/assets/images/thumb.png');
+    }
+    .price {
+        background-image: url('/assets/images/piggy.png');
+    }
+    .waste {
+        background-image: url('/assets/images/wheat.png');
+    }
+}
